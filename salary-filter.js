@@ -9,7 +9,7 @@ javascript: (() => {
   let s = frame.document.querySelector("select[name='type']");
   if (!s) { alert("select not found"); return; }
 
-  let keep = ["4104資訊工程學系", "P110資訊處資源管理組"];
+  let keep = ["4104資訊工程學系", "P110資訊處資源管理組", "K000秘書室"];
   [...s.options].forEach(o => {
     if (!keep.includes(o.value)) o.remove();
   });
